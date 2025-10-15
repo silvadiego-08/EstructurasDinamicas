@@ -1,6 +1,6 @@
 ﻿namespace EstructuraDinamicaG6
 {
-    partial class Form1
+    partial class FrmPilaDS
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            lblEdad = new Label();
+            btnAgregar = new Button();
+            tbEdad = new TextBox();
+            lbEdades = new Label();
+            SuspendLayout();
+            // 
+            // lblEdad
+            // 
+            lblEdad.AutoSize = true;
+            lblEdad.Location = new Point(58, 53);
+            lblEdad.Name = "lblEdad";
+            lblEdad.Size = new Size(46, 20);
+            lblEdad.TabIndex = 0;
+            lblEdad.Text = "Edad:";
+            // 
+            // btnAgregar
+            // 
+            btnAgregar.Location = new Point(149, 86);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(86, 36);
+            btnAgregar.TabIndex = 1;
+            btnAgregar.Text = "Agregar";
+            btnAgregar.UseVisualStyleBackColor = true;
+            // 
+            // tbEdad
+            // 
+            tbEdad.Location = new Point(110, 53);
+            tbEdad.Name = "tbEdad";
+            tbEdad.Size = new Size(125, 27);
+            tbEdad.TabIndex = 2;
+            // 
+            // lbEdades
+            // 
+            lbEdades.AutoSize = true;
+            lbEdades.Location = new Point(58, 170);
+            lbEdades.Name = "lbEdades";
+            lbEdades.Size = new Size(60, 20);
+            lbEdades.TabIndex = 3;
+            lbEdades.Text = "Edades:";
+            // 
+            // FrmPilaDS
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(551, 450);
+            Controls.Add(lbEdades);
+            Controls.Add(tbEdad);
+            Controls.Add(btnAgregar);
+            Controls.Add(lblEdad);
+            Name = "FrmPilaDS";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblEdad;
+        private Button btnAgregar;
+        private TextBox tbEdad;
+        private Label lbEdades;
     }
 }

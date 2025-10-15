@@ -1,8 +1,8 @@
 namespace EstructuraDinamicaG6
 {
-    public partial class Form1 : Form
+    public partial class FrmPilaDS : Form
     {
-        public Form1()
+        public FrmPilaDS()
         {
             InitializeComponent();
         }
