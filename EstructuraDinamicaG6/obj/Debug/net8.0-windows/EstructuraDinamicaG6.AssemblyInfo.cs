@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EstructuraDinamicaG6")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+298b17172ff6d3ef80bab317d5e5d0e8cd79fe80")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28999f663d73f331ce3915383e2e6f11a011d641")]
 [assembly: System.Reflection.AssemblyProductAttribute("EstructuraDinamicaG6")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EstructuraDinamicaG6")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

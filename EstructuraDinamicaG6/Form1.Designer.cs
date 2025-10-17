@@ -33,7 +33,8 @@
             tbEdad = new TextBox();
             lblEdades = new Label();
             btnEliminar = new Button();
-            button1 = new Button();
+            btnMostrar = new Button();
+            btnMayor = new Button();
             SuspendLayout();
             // 
             // lblEdad
@@ -81,21 +82,33 @@
             btnEliminar.UseVisualStyleBackColor = true;
             btnEliminar.Click += btnEliminar_Click;
             // 
-            // button1
+            // btnMostrar
             // 
-            button1.Location = new Point(149, 275);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 36);
-            button1.TabIndex = 5;
-            button1.Text = "Eliminar";
-            button1.UseVisualStyleBackColor = true;
+            btnMostrar.Location = new Point(378, 86);
+            btnMostrar.Name = "btnMostrar";
+            btnMostrar.Size = new Size(94, 36);
+            btnMostrar.TabIndex = 5;
+            btnMostrar.Text = "Mostrar ultimo";
+            btnMostrar.UseVisualStyleBackColor = true;
+            btnMostrar.Click += btnMostrar_Click;
+            // 
+            // btnMayor
+            // 
+            btnMayor.Location = new Point(236, 128);
+            btnMayor.Name = "btnMayor";
+            btnMayor.Size = new Size(142, 52);
+            btnMayor.TabIndex = 6;
+            btnMayor.Text = "Mayor a menor";
+            btnMayor.UseVisualStyleBackColor = true;
+            btnMayor.Click += btnMayor_Click;
             // 
             // FrmPilaDS
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(551, 450);
-            Controls.Add(button1);
+            Controls.Add(btnMayor);
+            Controls.Add(btnMostrar);
             Controls.Add(btnEliminar);
             Controls.Add(lblEdades);
             Controls.Add(tbEdad);
@@ -114,6 +127,7 @@
         private TextBox tbEdad;
         private Label lblEdades;
         private Button btnEliminar;
-        private Button button1;
+        private Button btnMostrar;
+        private Button btnMayor;
     }
 }

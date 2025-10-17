@@ -35,5 +35,36 @@ namespace EstructuraDinamicaG6
                 MessageBox.Show("La pila está vacía.");
             }
         }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            if (pila.Count > 0)
+            {
+                MessageBox.Show($"{pila.Peek()}");
+            }
+            else MessageBox.Show("La pila está vacía.");
+        }
+        private void ordenar()
+        {
+            Stack<int> pilaAux = new Stack<int>();
+            while (pila.Count > 0)
+            {
+                int temp = pila.Pop();
+                while (pilaAux.Count > 0 && pilaAux.Peek() > temp)
+                {
+                    pila.Push(pilaAux.Pop());
+                }
+                pilaAux.Push(temp);
+            }
+            pila = pilaAux;
+        }
+        
+
+        private void btnMayor_Click(object sender, EventArgs e) // Ordenar
+        {
+            ordenar();
+            Mostrar();
+
+        }
     }
 }
