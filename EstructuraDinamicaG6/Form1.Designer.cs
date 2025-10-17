@@ -31,7 +31,9 @@
             lblEdad = new Label();
             btnAgregar = new Button();
             tbEdad = new TextBox();
-            lbEdades = new Label();
+            lblEdades = new Label();
+            btnEliminar = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // lblEdad
@@ -51,6 +53,7 @@
             btnAgregar.TabIndex = 1;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // tbEdad
             // 
@@ -59,21 +62,42 @@
             tbEdad.Size = new Size(125, 27);
             tbEdad.TabIndex = 2;
             // 
-            // lbEdades
+            // lblEdades
             // 
-            lbEdades.AutoSize = true;
-            lbEdades.Location = new Point(58, 170);
-            lbEdades.Name = "lbEdades";
-            lbEdades.Size = new Size(60, 20);
-            lbEdades.TabIndex = 3;
-            lbEdades.Text = "Edades:";
+            lblEdades.AutoSize = true;
+            lblEdades.Location = new Point(58, 170);
+            lblEdades.Name = "lblEdades";
+            lblEdades.Size = new Size(60, 20);
+            lblEdades.TabIndex = 3;
+            lblEdades.Text = "Edades:";
+            // 
+            // btnEliminar
+            // 
+            btnEliminar.Location = new Point(257, 86);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(94, 36);
+            btnEliminar.TabIndex = 4;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(149, 275);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 36);
+            button1.TabIndex = 5;
+            button1.Text = "Eliminar";
+            button1.UseVisualStyleBackColor = true;
             // 
             // FrmPilaDS
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(551, 450);
-            Controls.Add(lbEdades);
+            Controls.Add(button1);
+            Controls.Add(btnEliminar);
+            Controls.Add(lblEdades);
             Controls.Add(tbEdad);
             Controls.Add(btnAgregar);
             Controls.Add(lblEdad);
@@ -88,6 +112,8 @@
         private Label lblEdad;
         private Button btnAgregar;
         private TextBox tbEdad;
-        private Label lbEdades;
+        private Label lblEdades;
+        private Button btnEliminar;
+        private Button button1;
     }
 }
